@@ -1,0 +1,90 @@
+/* ==========================================================================
+   MICHAEL CLAY — PORTFOLIO STYLESHEET
+   Strict fidelity reproduction matching inspo screenshots
+   ========================================================================== */
+
+/* --- CSS Reset & Variables --- */
+:root {
+  --color-bg: #ffffff;
+  --color-surface: #fafafa;
+  --color-card-bg: #ffffff;
+  --color-text-main: #09090b;
+  --color-text-body: #374151;
+  --color-text-muted: #6b7280;
+  --color-text-subtle: #9ca3af;
+  
+  /* Exact sampled purple from screenshots */
+  --color-purple: #8400F0;
+  --color-purple-hover: #7200d1;
+  --color-purple-badge: #AF45FF;
+  --color-purple-light: #f3e8ff;
+  --color-purple-circle: #c084fc;
+
+  /* Figma selection blue */
+  --color-figma-blue: #3b82f6;
+
+  /* Borders & Dividers */
+  --color-border: #e5e7eb;
+  --color-border-dark: #d1d5db;
+  --color-border-black: #000000;
+
+  /* Dark buttons */
+  --color-btn-dark: #1f2421;
+  --color-btn-dark-hover: #111827;
+
+  /* Typography */
+  --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-display: 'Plus Jakarta Sans', var(--font-main);
+
+  /* Layout */
+  --container-max-width: 1320px;
+  --nav-height: 80px;
+  --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  font-family: var(--font-main);
+  line-height: 1.5;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Accessible hidden utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Container */
+.section-container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
