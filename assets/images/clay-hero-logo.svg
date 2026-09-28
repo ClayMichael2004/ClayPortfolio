@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 140" width="380" height="140">
+  <defs>
+    <!-- Figma selection box handle style -->
+    <style>
+      .bbox { fill: none; stroke: #3b82f6; stroke-width: 1.5; }
+      .handle { fill: #ffffff; stroke: #3b82f6; stroke-width: 2; }
+      .letter-black { fill: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 900; font-size: 104px; }
+      .purple-a { fill: #8400F0; }
+    </style>
+  </defs>
+
+  <!-- Blue selection bounding box -->
+  <rect x="6" y="6" width="368" height="128" class="bbox"/>
+
+  <!-- Handles at 4 corners -->
+  <circle cx="6" cy="6" r="4.5" class="handle"/>
+  <circle cx="374" cy="6" r="4.5" class="handle"/>
+  <circle cx="6" cy="134" r="4.5" class="handle"/>
+  <circle cx="374" cy="134" r="4.5" class="handle"/>
+
+  <!-- Text clay -->
+  <!-- c -->
+  <text x="24" y="104" class="letter-black">c</text>
+  <!-- l -->
+  <text x="96" y="104" class="letter-black">l</text>
+  
+  <!-- Purple 'a' droplet/circle shape exactly like in inspo -->
+  <g transform="translate(142, 38)">
+    <path d="M 33 0 C 51.2 0 66 14.8 66 33 C 66 51.2 51.2 66 33 66 C 14.8 66 0 51.2 0 33 C 0 14.8 14.8 0 33 0 Z" fill="#8400F0"/>
+    <!-- bottom right teardrop flare into baseline -->
+    <path d="M 33 66 L 66 66 L 66 33 C 66 51.2 51.2 66 33 66 Z" fill="#8400F0"/>
+  </g>
+
+  <!-- y -->
+  <text x="232" y="104" class="letter-black">y</text>
+</svg>

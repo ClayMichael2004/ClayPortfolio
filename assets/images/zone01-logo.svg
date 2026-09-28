@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 120" width="380" height="120">
+  <!-- Stylized 01 Monogram -->
+  <g transform="translate(15, 18)">
+    <rect x="0" y="0" width="84" height="84" rx="16" fill="#0f172a"/>
+    <!-- Zero -->
+    <rect x="14" y="16" width="24" height="52" rx="12" fill="none" stroke="#8400F0" stroke-width="7"/>
+    <!-- One -->
+    <line x1="56" y1="20" x2="62" y2="16" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/>
+    <line x1="62" y1="16" x2="62" y2="68" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/>
+    <line x1="50" y1="68" x2="72" y2="68" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <!-- Text -->
+  <text x="116" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="#0f172a" letter-spacing="2">ZONE 01</text>
+  <text x="118" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="800" fill="#8400F0" letter-spacing="3">KISUMU</text>
+  <text x="118" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#64748b" letter-spacing="1">TALENT CAMPUS</text>
+</svg>
