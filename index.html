@@ -15,6 +15,43 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="top-nav" id="top-nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Home">
+        <img src="assets/images/logo.png" alt="Asterisk Logo" class="asterisk-logo">
+      </a>
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Slideout Drawer Overlay & Panel (Hamburger Menu) -->
+  <div class="nav-drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
+  <aside class="nav-drawer" id="nav-drawer" aria-label="Main Navigation" aria-hidden="true">
+    <div class="drawer-header">
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close Navigation Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+      <ul class="drawer-menu-list">
+        <li><a href="#hero" class="drawer-link">Home</a></li>
+        <li><a href="#projects" class="drawer-link">Projects</a></li>
+        <li><a href="#about" class="drawer-link">About</a></li>
+        <li><a href="#about" class="drawer-link" id="drawer-30under30">30 Under 30</a></li>
+        <li><a href="#footer" class="drawer-link">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
   <main>
   </main>
 </body>
