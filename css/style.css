@@ -508,3 +508,160 @@ body {
   color: #ffffff;
 }
 
+
+/* ==========================================================================
+   ARTICLES / DEV.TO SECTION (Devto.png)
+   ========================================================================== */
+.articles-section {
+  padding: 70px 0 60px;
+  background-color: var(--color-bg);
+}
+
+.articles-label-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 46px;
+  color: #374151;
+}
+
+.quill-icon {
+  stroke: #4b5563;
+}
+
+.articles-label-text {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #374151;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.article-card {
+  background-color: #ffffff;
+  border: 1.2px solid var(--color-border);
+  border-radius: 18px;
+  padding: 24px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+}
+
+.article-card:hover {
+  transform: translateY(-4px);
+  border-color: #d1d5db;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.06);
+}
+
+.article-image-box {
+  width: 100%;
+  height: 185px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
+  margin-bottom: 18px;
+}
+
+.article-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Interactive Pointer Hand + "Play & Learn" Tooltip */
+.article-tooltip {
+  position: absolute;
+  right: 18px;
+  bottom: 22px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  pointer-events: none;
+  animation: floatTooltip 3s ease-in-out infinite;
+}
+
+@keyframes floatTooltip {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.tooltip-badge {
+  background-color: #2e2638;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+.article-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+}
+
+.article-title {
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.article-desc {
+  font-size: 14.5px;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+  margin-bottom: 16px;
+}
+
+.article-desc strong {
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.article-arrow-box {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.purple-arrow {
+  color: var(--color-purple);
+  font-size: 22px;
+  font-weight: 700;
+  transition: transform var(--transition-fast);
+}
+
+.article-card:hover .purple-arrow {
+  transform: translateX(4px);
+}
+
+/* HELLO Section Transition Text */
+.section-transition-label {
+  text-align: center;
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: #6b7280;
+  margin: 70px 0 20px;
+  text-transform: uppercase;
+}
+
