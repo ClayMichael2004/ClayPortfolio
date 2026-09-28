@@ -246,3 +246,152 @@ body {
   transform: translateX(6px);
 }
 
+
+/* ==========================================================================
+   HERO / INTRODUCTION SECTION (Header-introduction.png)
+   ========================================================================== */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 24px 90px;
+  background-color: var(--color-bg);
+}
+
+.hero-container {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Figma Selection Box around "clay" */
+.hero-name-wrapper {
+  margin-bottom: 38px;
+  display: inline-block;
+}
+
+.figma-selection-box {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--color-figma-blue);
+  padding: 14px 28px 24px 28px;
+  background-color: transparent;
+}
+
+/* 4 Anchor Point Corner Handles */
+.figma-selection-box .handle {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background-color: #ffffff;
+  border: 1.8px solid var(--color-figma-blue);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.handle-tl { top: -5px; left: -5px; }
+.handle-tr { top: -5px; right: -5px; }
+.handle-bl { bottom: -5px; left: -5px; }
+.handle-br { bottom: -5px; right: -5px; }
+
+/* "clay" Display Typography */
+.hero-name {
+  font-family: var(--font-main);
+  font-size: clamp(4.5rem, 10vw, 7.8rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  color: #000000;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  user-select: none;
+}
+
+.letter-c, .letter-l, .letter-y {
+  color: #000000;
+  font-weight: 900;
+}
+
+.letter-a {
+  display: inline-flex;
+  align-items: baseline;
+  width: 0.72em;
+  height: 0.72em;
+  margin: 0 0.02em;
+  position: relative;
+  top: 0.04em;
+}
+
+.letter-a svg {
+  display: block;
+}
+
+/* Hero Subtitle */
+.hero-subtitle {
+  font-size: clamp(1.15rem, 2.3vw, 1.45rem);
+  color: #111827;
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 680px;
+  margin: 0 auto 34px;
+}
+
+.hero-subtitle strong {
+  font-weight: 800;
+  color: #000000;
+}
+
+/* Hero Action Buttons */
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 13px 32px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-outline {
+  background-color: #ffffff;
+  color: #111827;
+  border: 1.2px solid var(--color-border-dark);
+}
+
+.btn-outline:hover {
+  border-color: #9ca3af;
+  background-color: #f9fafb;
+}
+
+.btn-purple {
+  background-color: var(--color-purple);
+  color: #ffffff;
+  border: 1.2px solid var(--color-purple);
+  box-shadow: 0 4px 14px rgba(132, 0, 240, 0.25);
+}
+
+.btn-purple:hover {
+  background-color: var(--color-purple-hover);
+  border-color: var(--color-purple-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(132, 0, 240, 0.35);
+}
+
