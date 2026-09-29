@@ -785,3 +785,124 @@ body {
   color: var(--color-purple);
 }
 
+
+/* ==========================================================================
+   EXPERIENCE NUMBERLINE / TIMELINE (aboutxpandfooter.png)
+   ========================================================================== */
+.experience-timeline-container {
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.timeline-track-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 0;
+}
+
+/* Base horizontal track line extending across full width */
+.timeline-base-line {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #e5e7eb;
+  z-index: 1;
+}
+
+/* Black progress line connecting from Node 1 directly to Node 2 with purple accent */
+.timeline-active-line {
+  position: absolute;
+  top: 6px;
+  left: 25%;
+  width: 50%;
+  height: 2.5px;
+  background: linear-gradient(90deg, #111111 0%, #111111 82%, var(--color-purple) 100%);
+  z-index: 2;
+}
+
+/* 2-Column Grid for exact node placement at 25% and 75% */
+.timeline-nodes-grid {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.timeline-node-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.node-marker-wrapper {
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+/* Node 1: Solid Black Dot */
+.node-dot-solid {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #000000;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 1.5px #000000;
+}
+
+/* Node 2: Purple Ring Node (Active/Current) */
+.node-dot-purple-ring {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 3.5px solid var(--color-purple);
+  box-shadow: 0 0 0 2px rgba(132, 0, 240, 0.15);
+}
+
+.node-content {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.node-role-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+}
+
+.node-divider-line {
+  width: 75%;
+  height: 1.5px;
+  background-color: #e5e7eb;
+  margin-bottom: 20px;
+}
+
+.node-company-box {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.node-company-logo {
+  max-height: 48px;
+  width: auto;
+  max-width: 260px;
+  object-fit: contain;
+}
+
