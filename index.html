@@ -357,5 +357,69 @@ https://www.linkedin.com/in/michael-clay-26330b3a6?utm_source=share_via&utm_cont
       </div>
     </section>
   </main>
+
+  <!-- FOOTER (aboutxpandfooter.png) -->
+  <footer class="site-footer" id="footer">
+    <div class="section-container footer-container">
+      
+      <!-- Back to Top Button matching screenshot -->
+      <div class="back-to-top-box">
+        <button class="back-to-top-btn" id="back-to-top-btn" aria-label="Back to top">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+        <span class="back-to-top-text" id="back-to-top-text">Back to the top</span>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <!-- Left: Logo, Name, Copyright -->
+        <div class="footer-left">
+          <span class="footer-brand-monogram">MC</span>
+          <span class="footer-brand-name">Michael Clay</span>
+          <span class="footer-copyright">© 2026</span>
+        </div>
+
+        <!-- Right: Social Links -->
+        <nav class="footer-nav" aria-label="Social Profiles">
+          <a href="https://www.linkedin.com/in/michael-clay-26330b3a6?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="footer-social-link">Linkedin</a>
+          <a href="https://github.com/ClayMichael2004" target="_blank" rel="noopener noreferrer" class="footer-social-link">Github</a>
+          <a href="https://dev.to/michaelochieng0" target="_blank" rel="noopener noreferrer" class="footer-social-link">Devto</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link">Instagram</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Project Details Interactive Modal -->
+  <div class="project-modal-backdrop" id="project-modal-backdrop" aria-hidden="true">
+    <div class="project-modal-card" id="project-modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-image-header">
+        <img id="modal-project-img" src="" alt="Project header preview">
+      </div>
+
+      <div class="modal-body-content">
+        <div class="modal-tags" id="modal-project-tags"></div>
+        <h2 class="modal-title" id="modal-project-title"></h2>
+        <p class="modal-subtitle" id="modal-project-subtitle"></p>
+        <div class="modal-description" id="modal-project-description"></div>
+
+        <div class="modal-actions">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-purple" id="modal-live-link">Live Project</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="modal-code-link">View Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
