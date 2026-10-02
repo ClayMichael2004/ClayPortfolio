@@ -7,10 +7,10 @@
   <meta name="description" content="Portfolio of Michael Clay, Software Developer at Zone01 Kisumu, experienced with the Judicial Service Commission Kenya.">
   <link rel="icon" type="image/png" href="assets/images/logo.png">
 
-  <!-- Google Fonts: Inter & Plus Jakarta Sans for exact clean typography -->
+  <!-- Google Fonts: Inter, Plus Jakarta Sans, & Playfair Display for cursive accent typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -53,8 +53,12 @@
       <ul class="drawer-menu-list">
         <li><a href="#hero" class="drawer-link">Home</a></li>
         <li><a href="#projects" class="drawer-link">Projects</a></li>
+        <li><a href="#articles" class="drawer-link">Articles</a></li>
+        <li><a href="#hackathons" class="drawer-link">Hackathons</a></li>
         <li><a href="#about" class="drawer-link">About</a></li>
-        <li><a href="#about" class="drawer-link" id="drawer-30under30">30 Under 30</a></li>
+        <li><a href="#experience" class="drawer-link">Experience</a></li>
+        <li><a href="#gallery" class="drawer-link">Visual Playground</a></li>
+        <li><a href="#fun" class="drawer-link">What I Do For Fun</a></li>
         <li><a href="#footer" class="drawer-link">Contact</a></li>
       </ul>
     </nav>
@@ -127,7 +131,7 @@
           <!-- Project Card 2: Nirvana -->
           <article class="project-card" data-project-id="ict-support-system" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View ICT Support System project details">
             <div class="project-image-box">
-              <img src="assets/images/ICTlanding.png" alt="ICT Support System Interface" class="project-img" loading="lazy">
+              <img src="assets/images/ICT.png" alt="ICT Support System Interface" class="project-img" loading="lazy">
             </div>
             <div class="project-info">
               <h3 class="project-title">ICT Support System</h3>
@@ -135,41 +139,20 @@
             </div>
           </article>
 
-          <!-- Project Card 3: Creative Technology -->
-          <article class="project-card" data-project-id="nemo" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Nemo fish cage security and health tracking system">
+          <article class="project-card" data-project-id="toolzz-ai" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Toolzz AI project details">
             <div class="project-image-box">
-              <img src="assets/images/nemo.jpeg" alt="Nemo fish cage engine" class="project-img" loading="lazy">
+              <img src="assets/images/toolzzzai.png" alt="Toolzz AI Minimalist Developer Suite Interface" class="project-img" loading="lazy">
             </div>
             <div class="project-info">
-              <h3 class="project-title">Nemo IOT engine</h3>
-              <p class="project-desc">A fish cage IOT system that tracks fish health via Oxygen levels and fish theft using specialized sensors</p>
-            </div>
-          </article>
-
-          <article class="project-card" data-project-id="angaguard" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Angaguard project details">
-            <div class="project-image-box">
-              <img src="assets/images/angaguard.jpg" alt="Angaguard Carbon credits Emission and Compliance System" class="project-img" loading="lazy">
-            </div>
-            <div class="project-info">
-              <h3 class="project-title">Angaguard</h3>
-              <p class="project-desc">Carbon credits emisiion and compliance monitor </p>
-            </div>
-          </article>
-
-          <article class="project-card" data-project-id="digicow" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Digicow project details">
-            <div class="project-image-box">
-              <img src="assets/images/digicow.png" alt="Digicow AI assistant for agents" class="project-img" loading="lazy">
-            </div>
-            <div class="project-info">
-              <h3 class="project-title">Digicow</h3>
-              <p class="project-desc">Digicow AI assistant for smallholder farmers and agents across marginalized areas </p>
+              <h3 class="project-title">Toolzz AI</h3>
+              <p class="project-desc">Multi-Agent LLM Orchestration, Repository Auditing & Workflow Automation</p>
             </div>
           </article>
 
         </div>
 
         <!-- View More Projects Button -->
-        <div class="view-more-container">
+        <div class="view-more-container" id="projects-view-more-container">
           <button class="btn btn-view-more" id="view-more-btn">VIEW MORE</button>
         </div>
 
@@ -231,14 +214,67 @@
 
         </div>
 
-        <!-- Subtle "HELLO" Section Transition Text -->
-        <div class="section-transition-label">HELLO</div>
+      </div>
+    </section>
+
+    <!-- HACKATHONS SECTION -->
+    <section class="hackathons-section" id="hackathons">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <h2 class="section-title">Hackathons</h2>
+        </div>
+
+        <!-- 3-Column Hackathons Grid (Nemo, Angaguard, Digicow) -->
+        <div class="projects-grid" id="hackathons-grid">
+          
+          <!-- Hackathon Card 1: Nemo -->
+          <article class="project-card" data-project-id="nemo" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Nemo fish cage security and health tracking system">
+            <div class="project-image-box">
+              <img src="assets/images/nemo.jpeg" alt="Nemo fish cage engine" class="project-img" loading="lazy">
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Nemo IOT engine</h3>
+              <p class="project-desc">A fish cage IOT system that tracks fish health via Oxygen levels and fish theft using specialized sensors</p>
+            </div>
+          </article>
+
+          <!-- Hackathon Card 2: Angaguard -->
+          <article class="project-card" data-project-id="angaguard" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Angaguard project details">
+            <div class="project-image-box">
+              <img src="assets/images/angaguard.jpg" alt="Angaguard Carbon credits Emission and Compliance System" class="project-img" loading="lazy">
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Angaguard</h3>
+              <p class="project-desc">Carbon credits emisiion and compliance monitor </p>
+            </div>
+          </article>
+
+          <!-- Hackathon Card 3: Digicow -->
+          <article class="project-card" data-project-id="digicow" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Digicow project details">
+            <div class="project-image-box">
+              <img src="assets/images/digicow.png" alt="Digicow AI assistant for agents" class="project-img" loading="lazy">
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Digicow</h3>
+              <p class="project-desc">Digicow AI assistant for smallholder farmers and agents across marginalized areas </p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- View More Hackathons Button -->
+        <div class="view-more-container" id="hackathons-view-more-container">
+          <button class="btn btn-view-more" id="view-more-hackathons-btn">VIEW MORE</button>
+        </div>
 
       </div>
     </section>
 
     <!-- ABOUT & EXPERIENCE SECTION (aboutxpandfooter.png) -->
     <section class="about-section" id="about">
+      <!-- Subtle "HELLO" Section Transition Text -->
+        <div class="section-transition-label">HELLO</div>
       <div class="section-container">
         
         <!-- About Top Grid: Profile Photo + Bio + Actions -->
@@ -247,7 +283,7 @@
           <div class="about-avatar-col">
             <div class="avatar-ring">
               <!-- Placeholder profile picture: ready to replace with user's own photo -->
-              <img src="assets/images/profile-placeholder.png" alt="Michael Clay Profile" class="avatar-img" id="user-avatar">
+              <img src="assets/images/clay.jpg" alt="Michael Clay Profile" class="avatar-img" id="user-avatar">
             </div>
           </div>
 
@@ -306,7 +342,7 @@ https://www.linkedin.com/in/michael-clay-26330b3a6?utm_source=share_via&utm_cont
         </div>
 
         <!-- Experience Horizontal Numberline / Timeline -->
-        <div class="experience-timeline-container">
+        <div class="experience-timeline-container" id="experience">
           
           <div class="timeline-track-wrapper">
             <!-- Background base line -->
@@ -333,7 +369,7 @@ https://www.linkedin.com/in/michael-clay-26330b3a6?utm_source=share_via&utm_cont
               <!-- Node 2: Software Developer (Zone 01 Kisumu) -->
               <div class="timeline-node-item is-active">
                 <div class="node-marker-wrapper">
-                  <div class="node-dot node-dot-purple-ring"></div>
+                  <div class="node-dot node-dot-green"></div>
                 </div>
                 <div class="node-content">
                   <h4 class="node-role-title">Software Developer</h4>
@@ -344,15 +380,16 @@ https://www.linkedin.com/in/michael-clay-26330b3a6?utm_source=share_via&utm_cont
                 </div>
               </div>
 
-               <div class="timeline-node-item is-active">
+              <!-- Node 3: Co-Founder at Afrinit -->
+              <div class="timeline-node-item is-active">
                 <div class="node-marker-wrapper">
-                  <div class="node-dot node-dot-purple-ring"></div>
+                  <div class="node-dot node-dot-green"></div>
                 </div>
                 <div class="node-content">
                   <h4 class="node-role-title">Co-Founder at Afrinit</h4>
                   <div class="node-divider-line"></div>
                   <div class="node-company-box">
-                    <img src="assets/images/z01kisumulogo.png" alt="Afrinit Co-Founder" class="node-company-logo">
+                    <img src="assets/images/Afrinit.jpg" alt="Afrinit Co-Founder" class="node-company-logo">
                   </div>
                 </div>
               </div>
@@ -362,6 +399,224 @@ https://www.linkedin.com/in/michael-clay-26330b3a6?utm_source=share_via&utm_cont
 
         </div>
 
+      </div>
+    </section>
+
+    <!-- GALLERY / VISUAL PLAYGROUND SECTION -->
+    <section class="gallery-section" id="gallery">
+      <div class="gallery-header-container">
+        <h2 class="gallery-title">visual playground</h2>
+      </div>
+
+      <!-- Auto-scrolling infinite carousel from right to left -->
+      <div class="gallery-marquee-viewport" aria-label="Visual playground carousel">
+        <div class="gallery-marquee-track">
+          
+          <!-- Set 1 (Placeholder items ready for photo replacement) -->
+          <div class="gallery-card">
+            <img src="assets/images/gallery-spotify.svg" alt="Rewind with Spotify's Vintage Collection" class="gallery-img" loading="lazy">
+          </div>
+
+          <div class="gallery-card">
+            <img src="assets/images/gallery-mcbutt.svg" alt="McButt Concept Exploration" class="gallery-img" loading="lazy">
+          </div>
+
+          <div class="gallery-card">
+            <img src="assets/images/gallery-harmonia.svg" alt="Harmonia Music Festival Poster" class="gallery-img" loading="lazy">
+          </div>
+
+          <div class="gallery-card">
+            <img src="assets/images/gallery-spatial.svg" alt="Spatial Synthesis 3D Visuals" class="gallery-img" loading="lazy">
+          </div>
+
+          <div class="gallery-card">
+            <img src="assets/images/gallery-poster.svg" alt="Form and Void Typographic Poster" class="gallery-img" loading="lazy">
+          </div>
+
+          <div class="gallery-card">
+            <img src="assets/images/gallery-brand.svg" alt="Interface Motion Design System" class="gallery-img" loading="lazy">
+          </div>
+
+          <!-- Set 2 (Exact duplicate for seamless infinite loop) -->
+          <div class="gallery-card" aria-hidden="true">
+            <img src="assets/images/gallery-spotify.svg" alt="" class="gallery-img" loading="lazy">
+          </div>
+
+          <div class="gallery-card" aria-hidden="true">
+            <img src="assets/images/gallery-mcbutt.svg" alt="" class="gallery-img" loading="lazy">
+          </div>
+
+          <div class="gallery-card" aria-hidden="true">
+            <img src="assets/images/gallery-harmonia.svg" alt="" class="gallery-img" loading="lazy">
+          </div>
+
+          <div class="gallery-card" aria-hidden="true">
+            <img src="assets/images/gallery-spatial.svg" alt="" class="gallery-img" loading="lazy">
+          </div>
+
+          <div class="gallery-card" aria-hidden="true">
+            <img src="assets/images/gallery-poster.svg" alt="" class="gallery-img" loading="lazy">
+          </div>
+
+          <div class="gallery-card" aria-hidden="true">
+            <img src="assets/images/gallery-brand.svg" alt="" class="gallery-img" loading="lazy">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I DO FOR FUN SECTION (Exact template reproduction) -->
+    <section class="fun-section" id="fun">
+      <!-- Notebook ruled horizontal lines background -->
+      <div class="fun-notebook-lines" aria-hidden="true"></div>
+
+      <div class="section-container fun-container">
+        
+        <div class="fun-header">
+          <h2 class="fun-title">
+            What I <span class="fun-italic-word">do<svg class="fun-scribble" viewBox="0 0 120 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 11C28 6 85 5 116 8M10 14C35 11 90 10 114 14" stroke="#2e7d32" stroke-width="2.5" stroke-linecap="round"/></svg></span> for fun .
+          </h2>
+          <p class="fun-subtitle">A glimpse into what keeps me inspired, curious, and energized outside the IDE.</p>
+        </div>
+
+        <!-- 4 Sticky Pinboard Notes Grid -->
+        <div class="fun-cards-grid">
+          
+          <!-- Note 1: Mint Green - Football -->
+          <div class="fun-card fun-card-1">
+            <div class="pin-thumbtack" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <radialGradient id="pinGrad1" cx="35%" cy="32%" r="65%">
+                    <stop offset="0%" stop-color="#ff7b72"/>
+                    <stop offset="40%" stop-color="#e53935"/>
+                    <stop offset="75%" stop-color="#b71c1c"/>
+                    <stop offset="100%" stop-color="#7f0000"/>
+                  </radialGradient>
+                  <filter id="pinShadow1" x="-30%" y="-20%" width="160%" height="160%">
+                    <feDropShadow dx="0" dy="3" stdDeviation="2.2" flood-color="rgba(0,0,0,0.35)"/>
+                  </filter>
+                </defs>
+                <circle cx="14" cy="13" r="8" fill="url(#pinGrad1)" filter="url(#pinShadow1)"/>
+                <ellipse cx="11.8" cy="10.5" rx="2.8" ry="1.8" fill="#ffffff" fill-opacity="0.65" transform="rotate(-30 11.8 10.5)"/>
+              </svg>
+            </div>
+            <div class="fun-card-inner fun-inner-mint">
+              <div class="fun-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#253529" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="12 8 8 11 9.5 16 14.5 16 16 11 12 8"></polygon>
+                  <line x1="12" y1="2" x2="12" y2="8"></line>
+                  <line x1="2.05" y1="10.5" x2="8" y2="11"></line>
+                  <line x1="4.5" y1="19" x2="9.5" y2="16"></line>
+                  <line x1="19.5" y1="19" x2="14.5" y2="16"></line>
+                  <line x1="21.95" y1="10.5" x2="16" y2="11"></line>
+                </svg>
+              </div>
+              <h3 class="fun-card-title">Football &amp; Matchdays</h3>
+              <p class="fun-card-body">Whether cheering through intense weekend fixtures, breaking down tactics with friends, or having a kickabout on the pitch, football is my go-to energy recharge.</p>
+            </div>
+          </div>
+
+          <!-- Note 2: Peach - Listening to Music -->
+          <div class="fun-card fun-card-2">
+            <div class="pin-thumbtack" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <radialGradient id="pinGrad2" cx="35%" cy="32%" r="65%">
+                    <stop offset="0%" stop-color="#ff7b72"/>
+                    <stop offset="40%" stop-color="#e53935"/>
+                    <stop offset="75%" stop-color="#b71c1c"/>
+                    <stop offset="100%" stop-color="#7f0000"/>
+                  </radialGradient>
+                  <filter id="pinShadow2" x="-30%" y="-20%" width="160%" height="160%">
+                    <feDropShadow dx="0" dy="3" stdDeviation="2.2" flood-color="rgba(0,0,0,0.35)"/>
+                  </filter>
+                </defs>
+                <circle cx="14" cy="13" r="8" fill="url(#pinGrad2)" filter="url(#pinShadow2)"/>
+                <ellipse cx="11.8" cy="10.5" rx="2.8" ry="1.8" fill="#ffffff" fill-opacity="0.65" transform="rotate(-30 11.8 10.5)"/>
+              </svg>
+            </div>
+            <div class="fun-card-inner fun-inner-peach">
+              <div class="fun-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b2820" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                  <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+                </svg>
+              </div>
+              <h3 class="fun-card-title">Soundtracks &amp; Deep Focus</h3>
+              <p class="fun-card-body">Music sets the rhythm for everything I build. From energetic Afrobeat anthems and chill Lo-Fi beats to hip-hop grooves, my headphones are always on during deep work.</p>
+            </div>
+          </div>
+
+          <!-- Note 3: Baby Blue - Trivias -->
+          <div class="fun-card fun-card-3">
+            <div class="pin-thumbtack" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <radialGradient id="pinGrad3" cx="35%" cy="32%" r="65%">
+                    <stop offset="0%" stop-color="#ff7b72"/>
+                    <stop offset="40%" stop-color="#e53935"/>
+                    <stop offset="75%" stop-color="#b71c1c"/>
+                    <stop offset="100%" stop-color="#7f0000"/>
+                  </radialGradient>
+                  <filter id="pinShadow3" x="-30%" y="-20%" width="160%" height="160%">
+                    <feDropShadow dx="0" dy="3" stdDeviation="2.2" flood-color="rgba(0,0,0,0.35)"/>
+                  </filter>
+                </defs>
+                <circle cx="14" cy="13" r="8" fill="url(#pinGrad3)" filter="url(#pinShadow3)"/>
+                <ellipse cx="11.8" cy="10.5" rx="2.8" ry="1.8" fill="#ffffff" fill-opacity="0.65" transform="rotate(-30 11.8 10.5)"/>
+              </svg>
+            </div>
+            <div class="fun-card-inner fun-inner-blue">
+              <div class="fun-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1c3040" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+              </div>
+              <h3 class="fun-card-title">Trivia &amp; Quiz Battles</h3>
+              <p class="fun-card-body">Always up for a battle of wits. I love rapid-fire trivia tournaments, geography quizzes, and obscure tech lore showdowns that test quick recall and random curiosity.</p>
+            </div>
+          </div>
+
+          <!-- Note 4: Lime Green - Tech Hobbies -->
+          <div class="fun-card fun-card-4">
+            <div class="pin-thumbtack" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <radialGradient id="pinGrad4" cx="35%" cy="32%" r="65%">
+                    <stop offset="0%" stop-color="#ff7b72"/>
+                    <stop offset="40%" stop-color="#e53935"/>
+                    <stop offset="75%" stop-color="#b71c1c"/>
+                    <stop offset="100%" stop-color="#7f0000"/>
+                  </radialGradient>
+                  <filter id="pinShadow4" x="-30%" y="-20%" width="160%" height="160%">
+                    <feDropShadow dx="0" dy="3" stdDeviation="2.2" flood-color="rgba(0,0,0,0.35)"/>
+                  </filter>
+                </defs>
+                <circle cx="14" cy="13" r="8" fill="url(#pinGrad4)" filter="url(#pinShadow4)"/>
+                <ellipse cx="11.8" cy="10.5" rx="2.8" ry="1.8" fill="#ffffff" fill-opacity="0.65" transform="rotate(-30 11.8 10.5)"/>
+              </svg>
+            </div>
+            <div class="fun-card-inner fun-inner-lime">
+              <div class="fun-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2c3a22" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                  <polyline points="6 8 9 10 6 12"></polyline>
+                  <line x1="11" y1="12" x2="14" y2="12"></line>
+                </svg>
+              </div>
+              <h3 class="fun-card-title">Weekend Tech Tinkering</h3>
+              <p class="fun-card-body">Outside work, I love exploring experimental developer tools, testing bleeding-edge AI models, and hacking together quirky micro-scripts or UI animations just to see how things tick.</p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
   </main>

@@ -93,6 +93,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Top Nav Scroll State (keeps hamburger and nav pristine at any scroll position)
+  const topNav = document.getElementById('top-nav');
+  if (topNav) {
+    const handleNavScroll = () => {
+      if (window.scrollY > 15) {
+        topNav.classList.add('is-scrolled');
+      } else {
+        topNav.classList.remove('is-scrolled');
+      }
+    };
+    window.addEventListener('scroll', handleNavScroll, { passive: true });
+    handleNavScroll();
+  }
+
   /* ==========================================================================
      3. PROJECT DATA & INTERACTIVE MODAL (Projects.png)
      "when you click one is when you now get more info mon the project itself"
@@ -133,6 +147,25 @@ document.addEventListener('DOMContentLoaded', () => {
       `,
       liveUrl: '',
       codeUrl: 'https://github.com'
+    },
+
+    'toolzz-ai': {
+      title: 'Toolzz AI — Minimalist Developer Suite',
+      subtitle: 'Multi-Agent LLM Orchestration, Repository Auditing & Workflow Automation',
+      image: 'assets/images/result.png',
+      tags: ['React 19', 'Node.js / Express', 'Multi-Agent AI', 'Vite', 'Developer Tools', 'REST API'],
+      description: `
+        <p>A minimalist developer workspace engineered to accelerate software workflows with automated repository diagnostics, commit authoring, and intelligent code scaffolding.</p>
+        <p><strong>Highlights & Implementation:</strong></p>
+        <ul>
+          <li>Multi-agent AI routing engine with automatic failover across free cloud providers (Groq Llama 3.3 70B, OpenRouter, and Google Gemini) to eliminate 429 rate-limit interruptions.</li>
+          <li>In-memory ZIP repository inspector analyzing project health, testing density, file-tree hierarchies, and automated structured README generation.</li>
+          <li>AST/directory hierarchy parser converting ASCII project trees into executable Bash, PowerShell, and Node.js folder scaffolding scripts.</li>
+          <li>Zero-clutter obsidian dark design system (#09090b) built with React 19, Tailwind CSS, Lucide icons, and stateless privacy-first upload lifecycles.</li>
+        </ul>
+      `,
+      liveUrl: '',
+      codeUrl: 'https://github.com/ClayMichael2004/toolzz'
     },
     'nemo': {
       title: 'Nemo X KijaniSpace & SpaceIoT',
@@ -285,67 +318,67 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ==========================================================================
-     4. VIEW MORE PROJECTS TOGGLE
+     4. VIEW MORE TOGGLE FOR PROJECTS & HACKATHONS
+     "fix the see more button to work only if more are there and it should only show 3 of them
+      then after pressing see more if there are more we see the others of which in this case
+      there arent yet. same to hackathons"
      ========================================================================== */
-  const viewMoreBtn = document.getElementById('view-more-btn');
-  const projectsGrid = document.getElementById('projects-grid');
-  let isExpanded = false;
+  function setupViewMoreToggle(gridId, btnId, containerId, maxVisible = 3) {
+    const grid = document.getElementById(gridId);
+    const btn = document.getElementById(btnId);
+    const container = document.getElementById(containerId);
+    if (!grid) return;
 
-  const extraProjects = [
-    // {
-    //   id: 'zone01-portal',
-    //   title: 'Zone01 Kisumu Developer Hub',
-    //   desc: 'Peer-to-Peer Learning Platform & Code Verification Engine',
-    //   img: 'assets/images/project-2.png'
-    // },
-    // {
-    //   id: 'judiciary-records',
-    //   title: 'Judiciary E-Records Assistant',
-    //   desc: 'Judicial Service Commission Kenya Digital Records Workflow',
-    //   img: 'assets/images/project-1.png'
-    // },
-    // {
-    //   id: 'distributed-cache',
-    //   title: 'Distributed In-Memory Cache',
-    //   desc: 'High-throughput Key-Value Store with Raft Consensus',
-    //   img: 'assets/images/project-3.png'
-    // }
-  ];
+    // Get all card elements inside this grid
+    const cards = Array.from(grid.querySelectorAll('.project-card'));
+    const totalCards = cards.length;
 
-  if (viewMoreBtn && projectsGrid) {
-    viewMoreBtn.addEventListener('click', () => {
-      if (!isExpanded) {
-        extraProjects.forEach(item => {
-          const card = document.createElement('article');
-          card.className = 'project-card extra-project';
-          card.setAttribute('data-project-id', item.id);
-          card.setAttribute('tabindex', '0');
-          card.setAttribute('role', 'button');
-          card.setAttribute('aria-haspopup', 'dialog');
-          card.innerHTML = `
-            <div class="project-image-box">
-              <img src="${item.img}" alt="${item.title}" class="project-img" loading="lazy">
-            </div>
-            <div class="project-info">
-              <h3 class="project-title">${item.title}</h3>
-              <p class="project-desc">${item.desc}</p>
-            </div>
-          `;
-          projectsGrid.appendChild(card);
-        });
-        attachCardListeners();
-        viewMoreBtn.textContent = 'SHOW LESS';
-        isExpanded = true;
-      } else {
-        const extraCards = projectsGrid.querySelectorAll('.extra-project');
-        extraCards.forEach(c => c.remove());
-        viewMoreBtn.textContent = 'VIEW MORE';
-        isExpanded = false;
-        // Smooth scroll back to top of projects section
-        document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
-      }
-    });
+    // If total cards <= maxVisible (currently 3 for projects, 3 for hackathons),
+    // hide the button container
+    if (totalCards <= maxVisible) {
+      if (container) container.style.display = 'none';
+      if (btn) btn.style.display = 'none';
+      return;
+    }
+
+    // If more than maxVisible exist, display the button and toggle extra items
+    if (container) container.style.display = 'flex';
+    if (btn) btn.style.display = 'inline-block';
+
+    let isExpanded = false;
+
+    function applyVisibility() {
+      cards.forEach((card, index) => {
+        if (index >= maxVisible) {
+          card.style.display = isExpanded ? '' : 'none';
+        } else {
+          card.style.display = '';
+        }
+      });
+    }
+
+    // Initialize: hide cards beyond maxVisible
+    applyVisibility();
+
+    if (btn) {
+      btn.addEventListener('click', () => {
+        isExpanded = !isExpanded;
+        applyVisibility();
+        btn.textContent = isExpanded ? 'SHOW LESS' : 'VIEW MORE';
+        if (!isExpanded) {
+          const sectionElem = grid.closest('section');
+          if (sectionElem) {
+            sectionElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    }
   }
+
+  window.setupViewMoreToggle = setupViewMoreToggle;
+
+  setupViewMoreToggle('projects-grid', 'view-more-btn', 'projects-view-more-container', 3);
+  setupViewMoreToggle('hackathons-grid', 'view-more-hackathons-btn', 'hackathons-view-more-container', 3);
 
   /* ==========================================================================
      5. BACK TO TOP BUTTON

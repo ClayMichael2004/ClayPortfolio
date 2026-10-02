@@ -1,0 +1,32 @@
+<svg width="600" height="480" viewBox="0 0 600 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="480" fill="#09090b"/>
+  
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="120" x2="600" y2="120" stroke="#18181b" stroke-width="1"/>
+  <line x1="0" y1="240" x2="600" y2="240" stroke="#18181b" stroke-width="1"/>
+  <line x1="0" y1="360" x2="600" y2="360" stroke="#18181b" stroke-width="1"/>
+  <line x1="150" y1="0" x2="150" y2="480" stroke="#18181b" stroke-width="1"/>
+  <line x1="300" y1="0" x2="300" y2="480" stroke="#18181b" stroke-width="1"/>
+  <line x1="450" y1="0" x2="450" y2="480" stroke="#18181b" stroke-width="1"/>
+
+  <!-- Glowing sphere in center -->
+  <defs>
+    <radialGradient id="glowBall" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#8400f0"/>
+      <stop offset="90%" stop-color="#3b0764"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </radialGradient>
+  </defs>
+  <circle cx="300" cy="220" r="110" fill="url(#glowBall)"/>
+  <ellipse cx="300" cy="220" rx="140" ry="40" stroke="#a855f7" stroke-width="2" fill="none" transform="rotate(-20 300 220)"/>
+  <ellipse cx="300" cy="220" rx="160" ry="50" stroke="#7e22ce" stroke-width="1" stroke-dasharray="4 4" fill="none" transform="rotate(30 300 220)"/>
+
+  <!-- Typography overlay -->
+  <text x="50" y="70" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800">SPATIAL SYNTHESIS</text>
+  <text x="50" y="96" fill="#a1a1aa" font-family="'Inter', sans-serif" font-size="13">3D Audio Reactive Visuals // 004</text>
+
+  <!-- Tag badge -->
+  <rect x="50" y="400" width="130" height="34" rx="17" fill="#18181b" stroke="#27272a"/>
+  <text x="115" y="422" fill="#c084fc" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">EXPERIMENTAL</text>
+</svg>

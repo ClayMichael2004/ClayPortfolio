@@ -1,0 +1,71 @@
+<svg width="600" height="480" viewBox="0 0 600 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background -->
+  <rect width="600" height="480" fill="#0d0d0d"/>
+
+  <!-- Top Hanging Clips -->
+  <line x1="120" y1="0" x2="120" y2="28" stroke="#888888" stroke-width="2"/>
+  <rect x="110" y="24" width="20" height="14" rx="2" fill="#d1d5db" stroke="#4b5563" stroke-width="1.5"/>
+  <line x1="480" y1="0" x2="480" y2="28" stroke="#888888" stroke-width="2"/>
+  <rect x="470" y="24" width="20" height="14" rx="2" fill="#d1d5db" stroke="#4b5563" stroke-width="1.5"/>
+
+  <!-- Stage Lights Spotlights -->
+  <circle cx="360" cy="140" r="120" fill="#10b981" fill-opacity="0.18"/>
+  <circle cx="240" cy="200" r="140" fill="#ec4899" fill-opacity="0.15"/>
+
+  <!-- Musician Silhouette with microphone -->
+  <g transform="translate(300, 160)">
+    <!-- Curly Hair halo -->
+    <circle cx="0" cy="-40" r="54" fill="#1f1b24"/>
+    <circle cx="-32" cy="-48" r="26" fill="#18131d"/>
+    <circle cx="32" cy="-48" r="26" fill="#18131d"/>
+    <circle cx="-16" cy="-76" r="24" fill="#24192b"/>
+    <circle cx="20" cy="-74" r="24" fill="#24192b"/>
+
+    <!-- Face profile -->
+    <ellipse cx="6" cy="-28" rx="28" ry="34" fill="#d4a373"/>
+    
+    <!-- Stage lighting highlight on skin -->
+    <ellipse cx="14" cy="-30" rx="14" ry="24" fill="#f43f5e" fill-opacity="0.35"/>
+    <ellipse cx="-8" cy="-28" rx="12" ry="22" fill="#34d399" fill-opacity="0.3"/>
+
+    <!-- Dark jacket / shoulders -->
+    <path d="M-90 100 C -70 20, -40 10, 0 10 C 40 10, 70 20, 90 100 Z" fill="#18181b"/>
+
+    <!-- Microphone & Hand -->
+    <rect x="-14" y="-8" width="16" height="32" rx="6" fill="#9ca3af" transform="rotate(-25 -14 -8)"/>
+    <circle cx="-18" cy="-12" r="11" fill="#4b5563"/>
+    <path d="M-30 8 C -30 -4, -10 -4, -10 12 C -10 24, -30 20, -30 8 Z" fill="#d4a373"/>
+  </g>
+
+  <!-- Typography Banner: HARMONIA MUSIC FESTIVAL -->
+  <g transform="translate(60, 270)">
+    <text x="240" y="44" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="900" text-anchor="middle" letter-spacing="1">HARMONIA</text>
+    <text x="240" y="74" fill="#e4e4e7" font-family="'Inter', sans-serif" font-size="14" font-weight="800" text-anchor="middle" letter-spacing="6">MUSIC FESTIVAL</text>
+  </g>
+
+  <!-- Magenta Lower Poster Banner -->
+  <rect x="40" y="370" width="520" height="74" rx="2" fill="#ec4899"/>
+  
+  <text x="65" y="402" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="900" letter-spacing="0.5">CORTIJO DEL CONDE</text>
+  <text x="65" y="424" fill="#fdf2f8" font-family="'Inter', sans-serif" font-size="13" font-weight="700" letter-spacing="1">GRANADA</text>
+
+  <!-- Neon Lime Starburst Sticker -->
+  <g transform="translate(290, 400)">
+    <path d="M0 -22 L5 -7 L20 -15 L12 -1 L26 3 L12 9 L21 21 L7 12 L2 26 L-4 12 L-19 21 L-11 9 L-25 3 L-12 -1 L-20 -15 L-6 -7 Z" fill="#a3e635"/>
+  </g>
+
+  <!-- Barcode graphic -->
+  <g transform="translate(440, 386)">
+    <rect x="0" y="0" width="4" height="42" fill="#000000"/>
+    <rect x="8" y="0" width="2" height="42" fill="#000000"/>
+    <rect x="14" y="0" width="6" height="42" fill="#000000"/>
+    <rect x="24" y="0" width="3" height="42" fill="#000000"/>
+    <rect x="30" y="0" width="7" height="42" fill="#000000"/>
+    <rect x="40" y="0" width="2" height="42" fill="#000000"/>
+    <rect x="46" y="0" width="5" height="42" fill="#000000"/>
+    <rect x="55" y="0" width="8" height="42" fill="#000000"/>
+    <rect x="67" y="0" width="3" height="42" fill="#000000"/>
+    <rect x="74" y="0" width="4" height="42" fill="#000000"/>
+    <rect x="82" y="0" width="6" height="42" fill="#000000"/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg width="600" height="480" viewBox="0 0 600 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Warm cream poster background -->
+  <rect width="600" height="480" fill="#f4ede2"/>
+
+  <!-- Bold geometric layout (Swiss/Bauhaus aesthetic) -->
+  <circle cx="160" cy="220" r="110" fill="#ea580c"/>
+  <rect x="220" y="140" width="220" height="220" fill="#1e293b"/>
+  <circle cx="360" cy="300" r="80" fill="#facc15" fill-opacity="0.9"/>
+
+  <text x="50" y="80" fill="#1e293b" font-family="'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="900" letter-spacing="-1">FORM &amp; VOID</text>
+  <text x="50" y="112" fill="#64748b" font-family="'Inter', sans-serif" font-size="14" font-weight="600" letter-spacing="3">TYPOGRAPHIC EXPLORATION</text>
+
+  <!-- Side text column -->
+  <g transform="translate(480, 160)">
+    <text x="0" y="0" fill="#1e293b" font-family="'Inter', sans-serif" font-size="11" font-weight="700">NAIROBI</text>
+    <text x="0" y="18" fill="#64748b" font-family="'Inter', sans-serif" font-size="10">2026 EDITION</text>
+    <line x1="0" y1="30" x2="60" y2="30" stroke="#1e293b" stroke-width="1.5"/>
+  </g>
+
+  <!-- Bottom rule -->
+  <line x1="50" y1="420" x2="550" y2="420" stroke="#1e293b" stroke-width="2"/>
+  <text x="50" y="446" fill="#1e293b" font-family="'Inter', sans-serif" font-size="12" font-weight="700">PLAYGROUND ARCHIVE • NO. 05</text>
+  <text x="550" y="446" fill="#1e293b" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="end">CLAY LABS</text>
+</svg>

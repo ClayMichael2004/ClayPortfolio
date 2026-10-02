@@ -1,0 +1,68 @@
+<svg width="600" height="480" viewBox="0 0 600 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with bright Spotify green and curve -->
+  <rect width="600" height="480" fill="#0cb653"/>
+  <path d="M-40 180 C 120 40, 240 220, 640 60 L 640 480 L -40 480 Z" fill="#0a9e48"/>
+  <circle cx="580" cy="380" r="140" fill="#0dbf57" fill-opacity="0.6"/>
+
+  <!-- Browser window frame -->
+  <rect x="30" y="30" width="540" height="420" rx="12" fill="#111111"/>
+  
+  <!-- Browser top bar -->
+  <rect x="30" y="30" width="540" height="36" rx="12" fill="#181818"/>
+  <!-- Window buttons -->
+  <circle cx="54" cy="48" r="5" fill="#ef4444"/>
+  <circle cx="70" cy="48" r="5" fill="#f59e0b"/>
+  <circle cx="86" cy="48" r="5" fill="#10b981"/>
+  <!-- URL pill -->
+  <rect x="180" y="38" width="240" height="20" rx="10" fill="#242424"/>
+  <text x="300" y="52" fill="#888888" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">spotify.com/vintage</text>
+
+  <!-- Left Content Area -->
+  <g transform="translate(60, 110)">
+    <text x="0" y="36" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="32" font-weight="800" letter-spacing="-0.5">Rewind with <tspan fill="#1ed760" font-style="italic">Spotify's</tspan></text>
+    <text x="0" y="74" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="32" font-weight="800" letter-spacing="-0.5">Vintage Collection</text>
+    
+    <text x="0" y="116" fill="#a1a1aa" font-family="'Inter', sans-serif" font-size="13" max-width="280">The timeless charm of music with our curated</text>
+    <text x="0" y="134" fill="#a1a1aa" font-family="'Inter', sans-serif" font-size="13">vintage cassettes &amp; vinyl classics.</text>
+
+    <!-- Explore Button -->
+    <g transform="translate(0, 168)">
+      <text x="0" y="24" fill="#ffffff" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Explore the <tspan font-style="italic">collection</tspan></text>
+      <circle cx="160" cy="20" r="14" fill="#1ed760"/>
+      <polygon points="156,14 167,20 156,26" fill="#000000"/>
+    </g>
+
+    <!-- Mini cassette cards -->
+    <g transform="translate(0, 230)">
+      <rect x="0" y="0" width="60" height="60" rx="6" fill="#27272a"/>
+      <text x="30" y="35" fill="#a1a1aa" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">ROCK</text>
+      <rect x="70" y="0" width="60" height="60" rx="6" fill="#ef4444"/>
+      <text x="100" y="35" fill="#ffffff" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle" font-weight="bold">STONES</text>
+      <rect x="140" y="0" width="60" height="60" rx="6" fill="#3b82f6"/>
+      <text x="170" y="35" fill="#ffffff" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle" font-weight="bold">JAZZ</text>
+    </g>
+  </g>
+
+  <!-- Right side: Giant Vinyl Record -->
+  <g transform="translate(420, 240)">
+    <!-- Vinyl grooved disk -->
+    <circle cx="0" cy="0" r="140" fill="#09090b" stroke="#222222" stroke-width="2"/>
+    <circle cx="0" cy="0" r="126" stroke="#18181b" stroke-width="1.5" fill="none"/>
+    <circle cx="0" cy="0" r="112" stroke="#27272a" stroke-width="1.2" fill="none"/>
+    <circle cx="0" cy="0" r="98" stroke="#18181b" stroke-width="1.5" fill="none"/>
+    <circle cx="0" cy="0" r="84" stroke="#27272a" stroke-width="1.2" fill="none"/>
+    <circle cx="0" cy="0" r="70" stroke="#18181b" stroke-width="1.5" fill="none"/>
+    
+    <!-- Vinyl center label (pink sticker from screenshot) -->
+    <circle cx="0" cy="0" r="54" fill="#f43f5e"/>
+    <circle cx="0" cy="0" r="12" fill="#111111"/>
+    <text x="0" y="-14" fill="#ffffff" font-family="'Inter', sans-serif" font-size="10" font-weight="800" text-anchor="middle">AS 8502</text>
+    <text x="0" y="8" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="900" text-anchor="middle">999</text>
+    <text x="0" y="24" fill="#fecdd3" font-family="'Inter', sans-serif" font-size="8" text-anchor="middle">STEREO LP</text>
+  </g>
+
+  <!-- Starburst badge from screenshot -->
+  <g transform="translate(470, 390)">
+    <path d="M0 -22 L4 -7 L19 -15 L11 -1 L26 2 L12 9 L22 22 L7 13 L2 28 L-4 13 L-19 22 L-11 9 L-26 2 L-12 -1 L-22 -15 L-7 -7 Z" fill="#1ed760"/>
+  </g>
+</svg>
